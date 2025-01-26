@@ -23,8 +23,18 @@
 .color-4{
     color: rgb(93, 88, 239);
 }
+.color-5{
+    color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
 
 /* navbar style */
+header{
+    margin-top: 10px;
+}
 .navbar{
     justify-content: space-between;
     align-items: center;
@@ -32,7 +42,7 @@
 .nav-item{
     list-style: none;
     margin-right: 30px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 .nav-link{
@@ -44,17 +54,108 @@
     border: none;
     background-color: #FEA301;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
+    margin-right: 140px;
 }
 .brand-name{
     
     font-weight: 700;
+    font-size: 2rem;
     
 }
 .logo{
     margin-left: 140px;
 }
+.main-logo{
+    width: 46px;
+    height: 46px;
+}
 .menu-icon{
-    color: aqua;
+    display: none;
+}
+.menu-icon{
+    color: rgba(0, 0, 0, 1);
+}
+/* hero section style */
+
+.hero{
+    justify-content: space-between;
+}
+.hero-content{
+    margin-top: 140px;
+    margin-left: 140px;
+    
+}
+
+.hero-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    width: 640px;
+    height: 183px;
+}
+.hero-description{
+    padding-top: 30px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 640px;
+    height: 50px;
+}
+.hero-btn{
+    margin-top: 24px;
+    padding: 10px 47px;
+    border-radius: 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.hero-image{
+    margin-right: 140px;
+    
+}
+/* responsive Design */
+@media screen and (max-width:576px) {
+
+    .menu-icon{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .menu-btn, .brand-name, .nav-links{
+        display: none;
+    }
+    .main-logo{
+        margin-left: -130px;
+    }
+    header{
+        border: 1px solid rgb(254, 163, 1);
+        
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+    .hero-img{
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        width: 357px;
+        height: 120px;
+        margin-right: auto;
+    }
+
+    .hero-description{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        width: 357px;
+        height: 54px;
+    }
+    
+
 }
