@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.color-1{
+    color: rgb(254, 163, 1)
+}
+.color-2{
+    color: rgb(1, 172, 253);
+}
+.color-3{
+    color: rgb(5, 212, 223);
+}
+
+.color-4{
+    color: rgb(93, 88, 239);
+}
+
+/* navbar style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.nav-link{
+    text-decoration: none;
+}
+.menu-btn{
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    background-color: #FEA301;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+.brand-name{
+    
+    font-weight: 700;
+    
+}
+.logo{
+    margin-left: 140px;
+}
+.menu-icon{
+    color: aqua;
+}
