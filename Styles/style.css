@@ -83,8 +83,8 @@ header{
     justify-content: space-between;
 }
 .hero-content{
-    margin-top: 140px;
-    margin-left: 140px;
+    padding-top: 140px;
+    padding-left: 140px;
     
 }
 
@@ -117,7 +117,7 @@ header{
 }
 /* responsive Design */
 @media screen and (max-width:576px) {
-
+  
     .menu-icon{
         display: block;
         width: 30px;
@@ -135,27 +135,31 @@ header{
     }
 
     .hero{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .hero-img{
         width: 100%;
-    }
-    .hero-title{
-        font-size: 2rem;
-        font-weight: 700;
-        text-align: center;
-        width: 357px;
-        height: 120px;
-        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+
     }
 
-    .hero-description{
+    .hero-title{
+        max-width: 357px;
+        font-size: 2rem;
         text-align: center;
-        font-size: 14px;
-        font-weight: 500;
-        width: 357px;
-        height: 54px;
+        
+    }
+    .hero-description{
+        max-width: 357px;
+        font-size: 0.95rem;
+        padding-bottom: -900px;
+        
+    }
+    .hero-content{
+        padding-top: 0;
+        padding-left: 0;
+        
     }
     
-
 }
