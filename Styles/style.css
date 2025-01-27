@@ -262,51 +262,541 @@ header{
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* stories */
+
+.all-story {
+    background-image: url(assets/bg.png), linear-gradient(to top, rgb(250, 216, 156) 30%, white);
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.all-story h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.stories-container {
+    width: 100%;
+    background-image: url(assets/bg.png), linear-gradient(to top, rgb(250, 216, 156) 30%, white);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0px 27px;
+    
+}
+
+.stories-button {
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: auto;
+}
+
+.stories-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.story-1 {
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.right-stories {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 80px;
+    
+}
+
+.story-1 h2,
+.story-1 p {
+    padding-left: 20px;
+}
+
+.story-2 h4,
+.story-3 h4,
+.story-4 h4,
+.story-5 h4 {
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+.story-1 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-1 button {
+    position: absolute;
+    left: 20px;
+    top: 48%;
+    bottom: 48%;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: rgb(60, 216, 232);
+    color: white;
+}
+
+.story-2 {
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+}
+
+.story-2 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-2 button {
+    position: absolute;
+    left: 20px;
+    top: 48%;
+    bottom: 40%;
+    background-color: rgb(149, 178, 38);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-3 {
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+}
+
+.story-3 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-3 button {
+    position: absolute;
+    left: 20px;
+    top: 48%;
+    bottom: 40%;
+    background-color: rgb(93, 88, 240);;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-4 {
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+}
+
+.story-4 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-4 button {
+    position: absolute;
+    left: 20px;
+    top: 48%;
+    bottom: 40%;
+    background-color:rgb(149, 178, 38);;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.story-5 {
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+}
+
+.story-5 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.story-5 button {
+    position: absolute;
+    left: 20px;
+    top: 48%;
+    bottom: 40%;
+    background-color: rgb(149, 178, 38);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-1 button:hover {
+    background-color: white;
+    color: cornflowerblue;
+    border: 1px solid ;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.story-2 button:hover {
+    background-color: white;
+    color: #F0AA00;
+    border: 1px solid #F0AA00;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.story-3 button:hover {
+    background-color: white;
+    color: #5D58F0;
+    border: 1px solid #5D58F0;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.story-4 button:hover {
+    background-color: white;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.story-5 button:hover {
+    background-color: white;
+    color: crimson;
+    border: 1px solid crimson;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* footer */
+
+.footer-content {
+    background-color: #01ACFD;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 100px;
+    overflow-x: hidden;
+}
+
+.footer-head {
+    width: 30%;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content ul {
+    list-style-type: none;
+}
+
 /* responsive Design */
-@media screen and (max-width:576px) {
-  
-    .menu-icon{
+@media screen and (max-width: 576px) {
+   
+
+    
+    .menu-icon {
         display: block;
+
         width: 30px;
         height: 30px;
     }
-    .menu-btn, .brand-name, .nav-links{
+
+    .menu-btn,
+    .brand-name,
+    .nav-links {
         display: none;
-    }
-    .main-logo{
-        margin-left: -130px;
-    }
-    header{
-        border: 1px solid rgb(254, 163, 1);
-        
+
     }
 
-    .hero{
-        flex-direction: column-reverse;
+    .main-logo {
+        margin-left: -130px;
+
     }
-    .hero-img{
+
+    header {
+        border: 1px solid rgb(254, 163, 1);
+
+    }
+
+
+
+    .hero {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+    }
+
+    .hero-img {
         width: 100%;
+
+        display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
-    .hero-title{
+    .hero-title {
         max-width: 357px;
+
         font-size: 2rem;
-        
-        
+
+        text-align: center;
+
     }
-    .hero-description{
+
+    .hero-description {
         max-width: 357px;
+
         font-size: 0.95rem;
-        
-        
+
     }
-    .hero-content{
+
+    .hero-content {
         padding-top: 0;
+
         padding-left: 0;
-        
+
+        margin-top: 20px;
+
     }
-    
+
+    .hero-btn {
+        font-size: 1rem;
+
+        padding: 8px 30px;
+
+    }
+/*  */
+    .curriculum-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .round-button {
+        display: none;
+    }
+
+    .curriculum {
+        text-align: center;
+    }
+
+    .story-1 {
+        display: none;
+    }
+
+    .stories-container {
+        width: 100%;
+    }
+
+    .stories-container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        box-sizing: border-box;
+        background-image: url(assets/bg.png), linear-gradient(to top, rgb(250, 216, 156) 30%, white);
+    }
+
+    .right-stories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right-stories>div {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .right-stories img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .right-stories h2,
+    .right-stories p {
+        padding: 10px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .right-stories {
+        margin-bottom: 20px;
+    }
+
+    .story-2 {
+        position: relative;
+    }
+
+    .story-2 button {
+        position: absolute;
+        top: 35%;
+        bottom: 50%;
+    }
+
+    .story-3 {
+        position: relative;
+    }
+
+    .story-3 button {
+        position: absolute;
+        top: 35%;
+        bottom: 65%;
+    }
+
+    .story-4 {
+        position: relative;
+    }
+
+    .story-4 button {
+        position: absolute;
+        top: 35%;
+        bottom: 65%;
+    }
+
+    .story-5 {
+        position: relative;
+    }
+
+    .story-5 button {
+        position: absolute;
+        top: 35%;
+        bottom: 65%;
+    }
+
+    .all-story {
+        width: 100%;
+        padding: 0 15px 50px 15px;
+        box-sizing: border-box;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding: 20px;
+        overflow-x: hidden;
+    }
+
+    .footer-text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-logo {
+        display: flex;
+        height: 140px;
+        align-items: stretch;
+    }
+
+    .footer-heading {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .footer-p {
+        width: 400px;
+        margin-top: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .footer-head,
+    .menu,
+    .socials-container {
+        text-align: left;
+    }
 }
